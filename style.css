@@ -69,11 +69,6 @@
   background: #62D2A2;
   border: 1px solid #c3e6cb;
 }
-
-.quiz-box .option:hover {
-  color: #F9ED69;
-}
-
 .quiz-footer {
   margin-top: 2px;
   display: flex;
