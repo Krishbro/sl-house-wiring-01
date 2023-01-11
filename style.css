@@ -71,8 +71,7 @@
 }
 
 .quiz-box .option:hover {
-  background-color: #fff;
-  color: black;
+  color: #F9ED69;
 }
 
 .quiz-footer {
