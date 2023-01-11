@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Sinhala Quiz</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h2 class="top">SL House Wiring</h2>
+  <div class="content">
+    <div class="quiz-box inactive">
+      <h2 class="que_text"></h2>
+      <div class="options">
+      </div>
+      <div class="quiz-footer">
+        <div class="footer-left">
+          <span class="count_que"></span> of <span class="total_que"></span> Questions
+        </div>
+        <div class="footer-right">
+          <div class="next-btn inactive">Next Question</div>
+        </div>
+      </div>
+    </div>
+    <div class="result-box inactive">
+
+      <h2>Result</h2>
+      <div class="result">
+        <h3 class="total-que">සියලුම ප්‍රශ්න    : <span></span></h3>
+        <h3 class="right-ans">නිවැරදි පිළිතුරු ✅: <span></span></h3>
+        <h3 class="wrong-ans">වැරදි පිළිතුරු ❌ : <span></span></h3>
+        <h3 class="percentage">ලකුණු ප්‍රතිශතය : <span></span></h3>
+      </div>
+      <div class="result-footer">
+        <div class="again-quiz">Again Qui ↩</div>
+        <div class="exit">
+          <a href="https://www.w3schools.com/">Next Quiz</a>
+        </div>
+      </div>
+
+      <div class="box1">
+        <div class="img1" style="background-color:#FFA1CF">
+
+          <div class="icon">
+            <img src="images/1.png" alt="" width="50px" height="50px">
+          </div>
+
+          <div class="p1">
+            <p>ඉලෙක්ට්‍රිකල් දැනුම</p>
+          </div>
+
+        </div>
+
+        <div class="img2" style="background-color:#8479E1">
+
+          <div class="icon">
+            <img src="images/3.png" alt="" width="50px" height="50px">
+          </div>
+
+          <div class="p1">
+            <p>NVQ විභාග ප්‍රශ්න</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="box1">
+        <div class="img3" style="background-color:#B4FE98">
+          <div class="icon">
+            <img src="images/2.png" alt="" width="50px" height="50px">
+          </div>
+          <div class="p1">
+            <p>නිවෙස් වයරින් දැනුම</p>
+          </div>
+        </div>
+
+        <div class="img4" style="background-color:#F6F078">
+          <div class="icon">
+            <img src="images/4.png" alt="" width="50px" height="50px">
+          </div>
+          <div class="p1">
+              <p>රැකියා අවස්තා</p>
+          </div>
+
+        </div>
+      </div>
+      <h2 style="color:red;font-size:20px;">ඇප් එක පහලින් ඩවුන්ලෝඩ් කරගන්න.</h2>
+      <div class="btn">
+        <a href="https://play.google.com/store/apps/details?id=io.ionic.prog609f1a16d530d7637ca9f2cb">Download</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var q1 = "විද්‍යුත් ධාරාවක් යනු?"
+    var questions = [{
+        num: 1,
+        question: q1,
+        answer: "B. ඉලෙක්ට්‍රෝනවල ගලා යෑමකි.",
+        options: [
+          "A. ප්‍රෝටෝනවල ගලා යෑමකි.",
+          "B. ඉලෙක්ට්‍රෝනවල ගලා යෑමකි.",
+          "C. නියුට්‍රෝනවල ගලා යෑමකි.",
+          "D. නියුක්ලියෝනවල ගලා යෑමකී."
+        ]
+      },
+          {
+      num: 2,
+      question: "සිගිති පරිපත බිදිනයේ කාර්ය වන්නේ?",
+      answer: "C.ශෝට් වීමකදී ,අදාල පරිපත කොටස පමනක් විසංදි වීම.",
+      options: [
+      "A.ශෝට් වීමකදී ,සම්පූර්න සැපයුම විසංදි වීම.",
+      "B.භූ ගත විදුලි කාංදුවකදී,සම්පූර්න සැපයුම විසංදි වීම.",
+      "C.ශෝට් වීමකදී ,අදාල පරිපත කොටස පමනක් විසංදි වීම.",
+      "D.භූ ගත විදුලි කාංදුවකදී, සැපයුමේ කොටසක් විසංදි වීම."
+      ]
+      },
+      {
+      num: 3,
+      question: "විදුලිබල අධිකාරිය සතු උපාංගය / උපාංග වන්නේ?",
+      answer: "D) ඉහත සියල්ල",
+      options: [
+      "A) විදුලි මීටරය",
+      "B) සේවා වයරය/ සවිස් වයරය",
+      "C) සේවා සිදහලුව",
+      "D) ඉහත සියල්ල"
+      ]
+      },
+
+      {
+      num: 4,
+      question: "පරිපතයකට වෝල්ට්මීටරය හා ඇමීටරය සවි කරනු ලබන්නේ",
+      answer: "C) සමාංතරගතව හා ශ්‍රේණිගතව",
+      options: [
+      "A) සමාංතරගතව",
+      "B) ශ්‍රේණිගතව හා සමාංතරගතව",
+      "C) සමාංතරගතව හා ශ්‍රේණිගතව",
+      "D) ශ්‍රේණිගතව"
+      ]
+      },
+      {
+      num: 5,
+      question: "කේබලයක ප්‍රමාණය 7/0.53mm ලෙස දක්වා ඇත.එහි දක්වා ඇත්තේ?",
+      answer: "C) කම්බි පොටවල් ගණන/ කම්බියේ විශ්කම්භය",
+      options: [
+      "A) කම්බි පොටවල් ගණන/ කේබලයේ විශ්කම්භය",
+      "B) කම්බි පොටවල් ගණන/ කේබලය අරය",
+      "C) කම්බි පොටවල් ගණන/ කම්බියේ විශ්කම්භය",
+      "D) කම්බි පොටවල් ගණන/ කම්බියේ අරය"
+      ]
+      },
+      {
+      num: 6,
+      question: "චුම්බකයක චුම්බක බල රේඛා ගමන් කරනුයේ?",
+      answer: "A) උත්තර ධ්‍රැවයේ සිට දක්ෂිණ ධ්‍රැවයට",
+      options: [
+      "A) උත්තර ධ්‍රැවයේ සිට දක්ෂිණ ධ්‍රැවයට",
+      "B) දක්ෂිණ ධ්‍රැවයේ සිට උත්තර ධ්‍රැවයට",
+      "C) දක්ෂිණ ධ්‍රැවයේ සිට ඊසාන දෙසට",
+      "D) උත්තර ධ්‍රැවයේ සිට උත්තර ධ්‍රැවයට"
+      ]
+      },
+      {
+      num: 7,
+      question: "පරිණාමකයක (ට්‍රාන්ස්ෆෝමරයක) ධාරාව මනිනු ලබන්නේ?",
+      answer: "D) A",
+      options: [
+      "A) KW/V",
+      "B) CosΘ",
+      "C) KVA",
+      "D) A"
+      ]
+      },
+      {
+      num: 8,
+      question: "ශ්‍රී ලංකාවේ ගෘහ විදුලි උපකරණ සඳහා සම්මත සැපයුම වන්නේ?",
+      answer: "D) 230V සහ 50 HZ",
+      options: [
+      "A) 240V සහ 60 HZ",
+      "B) 230V සහ 60 HZ",
+      "C) 240V සහ 50 HZ",
+      "D) 230V සහ 50 HZ"
+      ]
+      },
+      {
+      num: 9,
+      question: "විදුලි පහනක් 230V , 60W ලෙස ක්‍රමාංකනය කර ඇත.විදුලි පහන හරහා ගලන ධාරාව වන්නේ?",
+      answer: "A) ඇම්පියර් 0.26",
+      options: [
+      "A) ඇම්පියර් 0.26",
+      "B) ඇම්පියර් 4",
+      "C) ඇම්පියර් 0.3",
+      "D) ඇම්පියර් 3.8"
+      ]
+      },
+      {
+      num: 10,
+      question: "විදුලි පරිපථයක 220V ,75W විදුලි පහන්  10ක් සහ භාවිතයට ගන්නා විදුලි කේතලයක් 1KW ප්‍රමාණයක් ගනු ලැබුවේ නම් පරිපථය හරහා මුළු ධාරා වන්නේ?",
+      answer: "B) ඇම්පියර 7.9",
+      options: [
+      "A) ඇම්පියර 3.4",
+      "B) ඇම්පියර 7.9",
+      "C) ඇම්පියර 8.5",
+      "D) ඇම්පියර 7.5"
+      ]
+      },
+    ];
+  </script>
+  <script>
+    const start_btn = document.querySelector(".start_quiz");
+    const quiz_box = document.querySelector(".quiz-box");
+    const que_text = quiz_box.querySelector(".que_text");
+    const options_box = quiz_box.querySelector(".options");
+    const next_btn = document.querySelector(".next-btn");
+    const total_q = document.querySelector(".quiz-footer .total_que");
+    const count_que = document.querySelector(".quiz-footer .count_que");
+    const result_box = document.querySelector(".result-box");
+
+    const total_que_r = document.querySelector(".total-que span");
+    const right_ans_r = document.querySelector(".right-ans span");
+    const wrong_ans_r = document.querySelector(".wrong-ans span");
+    const percentage = document.querySelector(".percentage span");
+
+    const again_quiz = document.querySelector(".result-footer .again-quiz");
+    const exit = document.querySelector(".result-footer .exit");
+
+    const mark_wrong = '<i class="fa fa-times"></i>';
+    const mark_check = '<i class="fa fa-check"></i>';
+
+
+
+
+
+    total_q.innerText = questions.length;
+    total_que_r.innerText = questions.length;
+
+    var que_index = 0;
+    var right_answers = 0;
+    var wrong_answers = 0;
+    count_que.innerText = que_index + 1;
+    ShowQuestion(que_index);
+
+    function ShowQuestion(q_index) {
+      que_text.innerText = questions[q_index].num + ". " + questions[q_index].question;
+      var option_statement = "";
+      for (var i = 0; i < questions[q_index].options.length; i++) {
+        option_statement += `<div class="option">${questions[q_index].options[i]}</div>`;
+      }
+
+      options_box.innerHTML = option_statement;
+
+      var AllOptions = options_box.querySelectorAll(".option");
+
+      for (var j = 0; j < AllOptions.length; j++) {
+        AllOptions[j].setAttribute("onclick", "UserAnswer(this)");
+      }
+      next_btn.classList.add("inactive");
+    }
+
+
+    next_btn.onclick = () => {
+      que_index++;
+
+      if (questions.length > que_index) {
+        count_que.innerText = que_index + 1;
+        ShowQuestion(que_index);
+      } else {
+        console.log("Questions Complete");
+        quiz_box.classList.add("inactive");
+        result_box.classList.remove("inactive");
+        right_ans_r.innerText = right_answers;
+        wrong_ans_r.innerText = wrong_answers;
+        percentage.innerText = ((right_answers * 100) / questions.length).toFixed(2) + "%";
+
+
+      }
+
+      if (questions.length - 1 == que_index) {
+        next_btn.innerText = "Finish";
+      }
+    }
+
+    function UserAnswer(answer) {
+      let userAns = answer.innerText;
+      let correctAns = questions[que_index].answer;
+      var AllOptions2 = options_box.querySelectorAll(".option");
+
+      next_btn.classList.remove("inactive");
+      if (userAns == correctAns) {
+        console.log("%c Right Answer", "color:green");
+        answer.classList.add("correct");
+        answer.insertAdjacentHTML("beforeend", mark_check);
+        right_answers++;
+      } else {
+
+        console.log("%c Wrong Answer", "color:red");
+        answer.classList.add("incorrect");
+        answer.insertAdjacentHTML("beforeend", mark_wrong);
+        wrong_answers++;
+
+        for (var i = 0; i < AllOptions2.length; i++) {
+          if (AllOptions2[i].innerText == correctAns) {
+            AllOptions2[i].classList.add("correct");
+            AllOptions2[i].insertAdjacentHTML("beforeend", mark_check);
+          }
+        }
+      }
+
+
+      for (var j = 0; j < AllOptions2.length; j++) {
+        AllOptions2[j].classList.add("disabled");
+      }
+
+    }
+
+    again_quiz.onclick = () => {
+      quiz_box.classList.remove("inactive");
+      result_box.classList.add("inactive");
+
+      reset();
+
+    }
+
+    exit.onclick = () => {
+      start_btn.classList.remove("inactive");
+      result_box.classList.add("inactive");
+
+      reset();
+    }
+
+    function reset() {
+      que_index = 0;
+      right_answers = 0;
+      wrong_answers = 0;
+      next_btn.innerText = "Next Question";
+      count_que.innerText = que_index + 1;
+      ShowQuestion(que_index);
+    }
+  </script>
+  <script language=javascript>
+function blockOne() {
+  if (document.all) {
+      return false;
+    }
+    }
+function blockTwo(e) {
+  if (document.layers||(document.getElementById&&!document.all))
+  {
+  if (e.which==2||e.which==3) {
+    return false;
+  }
+  }
+  }
+if (document.layers){
+  document.captureEvents(Event.mousedown);
+  document.onmousedown=blockTwo;
+}
+else {
+  document.onmouseup=blockTwo;
+  document.oncontextmenu=blockOne;
+}
+  document.oncontextmenu=new Function("return false");
+</script>
+</body>
+
+</html>
